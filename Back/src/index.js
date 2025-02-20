@@ -1,11 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-
-app.get("/", (request, response) =>{
-    response.send("Test"); // testando uai
-    response.sendStatus(200); // 200 de ok
-})
+const appMessage = `Server running on port ${port}`;
 
 // Middleware -> pode ser usado na autenticação, validação, etc
 
