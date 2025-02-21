@@ -1,7 +1,7 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
-const port = 3000;
-const appMessage = `Server running on port ${port}`;
+const appMessage = `Server running on port ${process.env.PORT}`;
 
 // Middleware -> pode ser usado na autenticação, validação, etc
 
