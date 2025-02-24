@@ -1,4 +1,7 @@
 const express = require("express");
-const app = express();
+const router = express.Router({mergeParams: true});
+const arquivos = require("./arquivos/index.js");
 
-app.use();
+router.use("/", arquivos);
+
+module.exports = router;
